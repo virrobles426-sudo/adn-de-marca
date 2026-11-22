@@ -25,7 +25,7 @@
   "name": "ADN de Marca",
   "description": "Workbook digital en PDF con cinco módulos estratégicos y 16 ejercicios guiados para emprendedoras.",
   "brand": { "@type": "Brand", "name": "RE. Estudio Creativo" },
-  "offers": { "@type": "Offer", "price": "790", "priceCurrency": "UYU", "availability": "https://schema.org/InStock" }
+  "offers": { "@type": "Offer", "price": "19.90", "priceCurrency": "USD", "availability": "https://schema.org/InStock" }
 }
 </script>
 <style>
@@ -302,6 +302,13 @@ dialog.lightbox::backdrop{background:#1A1414EE}
 .includes svg{width:18px;height:18px;margin-top:.25em;color:var(--fucsia)}
 .card .btn{width:100%}
 .card .fine{font-size:.78rem;color:var(--tinta-suave);text-align:center}
+.trust{display:grid;gap:6px;margin-top:-8px}
+.secure{display:flex;align-items:center;justify-content:center;gap:8px;font-size:.82rem;font-weight:500}
+.secure svg{width:16px;height:16px;color:var(--fucsia);flex:0 0 16px}
+.guarantee{display:grid;grid-template-columns:52px 1fr;gap:14px;align-items:center;border-top:1.5px dashed var(--fucsia);padding-top:20px}
+.g-num{width:52px;height:52px;border:1.5px solid var(--fucsia);border-radius:50%;display:grid;place-items:center;font-weight:800;font-size:1.4rem;color:var(--fucsia);letter-spacing:-.04em}
+.guarantee b{display:block;font-weight:600;font-size:.95rem}
+.guarantee div span{display:block;font-size:.82rem;color:var(--tinta-suave);line-height:1.45}
 
 /* 10 Asesoría */
 .consult{display:grid;gap:40px}
@@ -726,8 +733,8 @@ dialog.legal::backdrop{background:#1A1414B3}
           <div class="psub" data-bind="product.subtitle">Workbook digital completo</div>
         </div>
         <div class="price">
-          <span class="amt" data-bind="product.priceFormatted">$790</span>
-          <span class="cur" data-bind="product.currency">UYU</span>
+          <span class="amt" data-bind="product.priceFormatted">$19,90</span>
+          <span class="cur" data-bind="product.currency">USD</span>
           <span class="once">Pago único.</span>
         </div>
         <div>
@@ -735,7 +742,14 @@ dialog.legal::backdrop{background:#1A1414B3}
           <ul class="includes" id="includes"></ul>
         </div>
         <a href="#comprar" class="btn" data-action="buy" data-product="adn">Comprar ADN de Marca <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
-        <p class="fine">Lo recibís por mail en menos de 24 horas hábiles.</p>
+        <div class="trust">
+          <p class="secure"><svg aria-hidden="true" viewBox="0 0 20 20"><rect x="4" y="9" width="12" height="9" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M7 9V6.5a3 3 0 0 1 6 0V9" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>Pago seguro a través de Hotmart</p>
+          <p class="fine">Pago único y acceso digital después de confirmar tu compra.</p>
+        </div>
+        <div class="guarantee">
+          <span class="g-num" aria-hidden="true">7</span>
+          <div><b>Garantía de 7 días</b><span>Si el workbook no es lo que esperabas, podés solicitar el reembolso dentro de los 7 días posteriores a tu compra, a través de Hotmart.</span></div>
+        </div>
       </div>
     </div>
   </div>
@@ -755,7 +769,7 @@ dialog.legal::backdrop{background:#1A1414B3}
         <dl class="facts" style="margin:0">
           <div><dt>Duración</dt><dd data-bind="consult.duration">90 minutos</dd></div>
           <div><dt>Incluye</dt><dd>Workbook ADN de Marca</dd></div>
-          <div><dt>Precio inicial</dt><dd><span class="big" data-bind="consult.priceFormatted">$2.490</span> <span data-bind="consult.currency">UYU</span></dd></div>
+          <div><dt>Precio inicial</dt><dd><span class="big" data-bind="consult.priceFormatted">$59,90</span> <span data-bind="consult.currency">USD</span></dd></div>
         </dl>
         <div class="consult-cta">
           <a href="#asesoria" class="btn btn--ink" data-action="consult">Quiero una asesoría <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
@@ -852,6 +866,10 @@ dialog.legal::backdrop{background:#1A1414B3}
    CONFIGURACIÓN — editá solo este bloque para ajustar precios, enlaces
    y textos pendientes. Todo lo que esté vacío ('') queda desactivado.
    ===================================================================== */
+// Checkout de Hotmart: TODOS los botones de compra usan este enlace.
+// Si lo dejás vacío (''), la compra se coordina por WhatsApp.
+const HOTMART_CHECKOUT_URL = 'https://pay.hotmart.com/P108607896Y?off=bb8xjex7';
+
 const CONFIG = {
   brand: {
     instagram: 'https://www.instagram.com/somos.reuy/',
@@ -863,7 +881,7 @@ const CONFIG = {
   whatsapp: {
     number: '59898309855',          // 098 309 855
     message: 'Hola RE.! Quiero hacer una consulta sobre ADN de Marca.',
-    buyMessage: 'Hola RE.! Quiero comprar el workbook ADN de Marca ($790 UYU). Mi mail para recibirlo es: ',
+    buyMessage: 'Hola RE.! Quiero comprar el workbook ADN de Marca. Mi mail para recibirlo es: ',
     consultMessage: 'Hola RE.! Quiero agendar una asesoría RE.pensá tu marca.',
   },
 
@@ -872,9 +890,9 @@ const CONFIG = {
     adn: {
       name: 'ADN DE MARCA',
       subtitle: 'Workbook digital completo',
-      price: 790,
-      currency: 'UYU',
-      checkoutUrl: 'https://pay.hotmart.com/P108607896Y?off=bb8xjex7',   // checkout de Hotmart. Vacío ('') = compra por WhatsApp.
+      price: 19.90,
+      currency: 'USD',
+      checkoutUrl: HOTMART_CHECKOUT_URL,
       includes: [
         'Workbook digital en PDF.',
         'Cinco módulos.',
@@ -889,13 +907,13 @@ const CONFIG = {
   consult: {
     name: 'RE.pensá tu marca',
     duration: '90 minutos',
-    price: 2490,
-    currency: 'UYU',
+    price: 59.90,
+    currency: 'USD',
     bookingUrl: '',                  // Calendly / agenda. Si está vacío se usa WhatsApp.
   },
 
   // Legal: URL de cada documento cuando esté publicado.
-  legal: { privacyUrl: '', termsUrl: '' },
+  legal: { privacyUrl: 'privacidad.html', termsUrl: 'terminos.html' },
 
   // Analítica: se cargan solo si tienen ID.
   analytics: { metaPixelId: '', gaMeasurementId: '' },
@@ -943,8 +961,14 @@ const CONFIG = {
       a: 'Lo hacés a tu ritmo: no hay fechas ni plazos. Podés avanzar módulo por módulo según tu disponibilidad. El último módulo te deja un plan de acción para los 30 días siguientes.' },
     { q: '¿Incluye asesoramiento personalizado?',
       a: 'El workbook es autoguiado. Si querés hacerlo acompañada, podés sumar la asesoría RE.pensá tu marca: una sesión estratégica de 90 minutos que incluye el workbook.' },
+    { q: '¿Cómo compro el workbook?',
+      a: 'Tocás cualquier botón de compra y pasás a la página de pago de Hotmart, la plataforma que procesa el pago de forma segura. Es un pago único de USD 19,90.' },
     { q: '¿Cómo recibo el archivo después de comprarlo?',
-      a: 'Una vez confirmado el pago, te enviamos el workbook en PDF por mail en menos de 24 horas hábiles.' },
+      a: 'El acceso es digital: una vez que se confirma tu compra, recibís el acceso al workbook en el mail que ingresaste en Hotmart. Revisá también la carpeta de spam o promociones.' },
+    { q: '¿Tiene garantía?',
+      a: 'Sí. Tenés una garantía de 7 días: si el workbook no es lo que esperabas, podés solicitar el reembolso dentro de los 7 días posteriores a tu compra, a través de Hotmart.' },
+    { q: '¿Qué hago si tengo un problema con el pago o el acceso?',
+      a: 'Escribinos por WhatsApp o por mail y te ayudamos. Si el inconveniente es con el pago, también podés contactar al soporte de Hotmart.' },
   ],
   pendingText: 'Estamos confirmando este dato. Escribinos y te respondemos.',
 };
@@ -956,7 +980,7 @@ const CONFIG = {
   document.documentElement.classList.add('js');
   const $ = (s, r=document) => r.querySelector(s);
   const $$ = (s, r=document) => Array.from(r.querySelectorAll(s));
-  const fmt = n => '$' + Number(n).toLocaleString('es-UY');
+  const fmt = n => '$' + Number(n).toLocaleString('es-UY', Number.isInteger(Number(n)) ? {} : { minimumFractionDigits: 2, maximumFractionDigits: 2 });
   const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 
   /* ---------- Analítica (solo si hay IDs) ---------- */
@@ -1048,6 +1072,7 @@ const CONFIG = {
 
   /* ---------- Legales ---------- */
   const legalDlg = $('#legal');
+  document.querySelectorAll('[data-legal]').forEach(el => { const u = el.dataset.legal === 'privacy' ? CONFIG.legal.privacyUrl : CONFIG.legal.termsUrl; if (u) el.href = u; });
   $$('[data-legal]').forEach(a => a.addEventListener('click', e => {
     const kind = a.dataset.legal; const url = kind === 'privacy' ? CONFIG.legal.privacyUrl : CONFIG.legal.termsUrl;
     if (url) { a.href = url; return; }
