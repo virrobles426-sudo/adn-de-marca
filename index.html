@@ -1,0 +1,1149 @@
+<!doctype html>
+<html lang="es-UY">
+<head>
+<title>ADN de Marca · re.</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="ADN de Marca: el workbook digital de RE. Estudio Creativo para emprendedoras que quieren transformar su producto o servicio en una marca con identidad, valor y personalidad.">
+<meta name="theme-color" content="#E6197F">
+<meta property="og:type" content="product">
+<meta property="og:title" content="ADN de Marca · Workbook digital para emprendedoras">
+<meta property="og:description" content="Una guía práctica para transformar tu producto o servicio en una marca con identidad, valor y personalidad. Descarga digital · A tu ritmo · Pago único.">
+<meta property="og:locale" content="es_UY">
+<!-- Completar cuando haya dominio: -->
+<!-- <link rel="canonical" href="https://TU-DOMINIO/"> -->
+<!-- <meta property="og:url" content="https://TU-DOMINIO/"> -->
+<meta property="og:image" content="img/og-adn-de-marca.jpg"><!-- usar URL absoluta cuando haya dominio -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23E6197F'/%3E%3Ctext x='9' y='45' font-family='Arial,sans-serif' font-weight='900' font-size='36' fill='%23FFE9DE'%3Ere.%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Poppins:wght@400;500;600;800&display=swap">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "ADN de Marca",
+  "description": "Workbook digital en PDF con cinco módulos estratégicos y 16 ejercicios guiados para emprendedoras.",
+  "brand": { "@type": "Brand", "name": "RE. Estudio Creativo" },
+  "offers": { "@type": "Offer", "price": "790", "priceCurrency": "UYU", "availability": "https://schema.org/InStock" }
+}
+</script>
+<style>
+/* Layout: editorial, asimétrico. Bandas de color sólido a todo el ancho; contenido en una grilla de 12 columnas con bloques desplazados. */
+:root{
+  --fucsia:#E6197F;
+  --naranja:#FF7A2F;
+  --durazno:#FFB38A;
+  --rubor:#FFE9DE;
+  --tinta:#1A1414;
+  --blanco:#FFFFFF;
+  --tinta-suave:#5B4A4A;   /* texto secundario, neutro con sesgo al rubor */
+  --linea:#1A14142E;
+  --f-sans:'Poppins', 'Helvetica Neue', Arial, sans-serif;
+  --f-serif:'DM Serif Display', Georgia, 'Times New Roman', serif;
+  --gutter:max(20px, env(safe-area-inset-left, 0px));
+  --gutter-r:max(20px, env(safe-area-inset-right, 0px));
+  --ease:cubic-bezier(.2,.7,.2,1);
+  color-scheme: light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--blanco);color:var(--tinta);font-family:var(--f-sans);font-size:1rem;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--blanco)}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-weight:800;line-height:1.02;letter-spacing:-.03em;margin:0;text-wrap:balance}
+p{margin:0}
+.wrap{max-width:1240px;margin:0 auto;padding-left:var(--gutter);padding-right:var(--gutter-r)}
+.serif{font-family:var(--f-serif);font-style:italic;font-weight:400;letter-spacing:-.01em}
+.eyebrow{font-size:.75rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase}
+.muted{color:var(--tinta-suave)}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+:focus-visible{outline:3px solid var(--tinta);outline-offset:3px}
+.on-dark :focus-visible,.band-fucsia :focus-visible,.band-tinta :focus-visible{outline-color:var(--rubor)}
+
+/* ---------- Botones ---------- */
+.btn{--b:var(--fucsia);--t:var(--blanco);display:inline-flex;align-items:center;gap:.75em;justify-content:center;background:var(--b);color:var(--t);border:1.5px solid var(--b);border-radius:999px;padding:1.05em 1.7em;font:600 .82rem/1 var(--f-sans);letter-spacing:.12em;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:transform .35s var(--ease),background .25s,color .25s}
+.btn svg{width:1.4em;height:1em;transition:transform .35s var(--ease)}
+.btn:hover svg{transform:translateX(5px)}
+.btn:active{transform:scale(.98)}
+.btn--ink{--b:var(--tinta);--t:var(--blanco)}
+.btn--rubor{--b:var(--rubor);--t:var(--tinta)}
+.btn--ghost{background:transparent;color:var(--tinta);border-color:var(--tinta)}
+.btn--ghost:hover{background:var(--tinta);color:var(--blanco)}
+.btn--sm{padding:.8em 1.2em;font-size:.72rem}
+
+/* ---------- Header ---------- */
+.site-header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:var(--blanco);border-bottom:1px solid transparent;transition:border-color .3s}
+.site-header.scrolled{border-bottom-color:var(--linea)}
+.site-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:68px}
+.logo{font-weight:800;font-size:1.9rem;letter-spacing:-.06em;line-height:1;text-decoration:none;color:var(--tinta)}
+.logo span{color:var(--fucsia)}
+.nav{display:none;gap:28px;font-size:.85rem;font-weight:500}
+.nav a{text-decoration:none;position:relative}
+.nav a::after{content:"";position:absolute;left:0;right:100%;bottom:-4px;height:1.5px;background:var(--fucsia);transition:right .35s var(--ease)}
+.nav a:hover::after{right:0}
+@media (min-width:900px){.nav{display:flex}}
+
+/* ---------- Grafismos ---------- */
+.ast{display:inline-block;width:1em;height:1em;color:var(--fucsia)}
+.spin{animation:spin 24s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* ---------- 01 Hero ---------- */
+.hero{padding-block:48px 72px;position:relative;overflow:hidden}
+.hero .wrap{display:grid;gap:48px;align-items:center}
+@media (min-width:960px){.hero .wrap{grid-template-columns:7fr 5fr;gap:40px}.hero{padding-block:72px 96px}}
+.hero-copy{display:grid;gap:28px;min-width:0}
+.tag{display:inline-flex;align-items:center;gap:10px;font-size:.72rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase}
+.tag::before{content:"";width:28px;height:1.5px;background:var(--fucsia)}
+.hero h1{font-size:clamp(2.6rem,7.4vw,5.6rem)}
+.hero h1 .l2{display:block;color:var(--fucsia)}
+.hero h1 .w{display:inline-block;animation:rise .9s var(--ease) both}
+.hero-lead{font-size:clamp(1.05rem,1.6vw,1.25rem);max-width:34ch;color:var(--tinta-suave)}
+.hero-cta{display:flex;flex-direction:column;align-items:flex-start;gap:14px}
+.hero-note{font-size:.8rem;color:var(--tinta-suave);letter-spacing:.02em}
+@keyframes rise{from{transform:translateY(.35em);opacity:.001}to{transform:none;opacity:1}}
+
+.hero-visual{position:relative;min-width:0;aspect-ratio:4/4.6;max-width:520px;width:100%;justify-self:center}
+.hero-visual .block{position:absolute;inset:8% 0 0 12%;background:var(--fucsia)}
+.hero-visual .ring{position:absolute;width:44%;aspect-ratio:1;border:1.5px solid var(--tinta);border-radius:50%;left:-2%;top:0}
+.hero-visual .ast-big{position:absolute;right:4%;top:2%;width:16%;color:var(--naranja)}
+.hero-visual .mock{position:absolute;width:56%;filter:none}
+.hero-visual .mock--back{left:38%;top:18%;transform:rotate(7deg)}
+.hero-visual .mock--front{left:16%;top:24%;transform:rotate(-5deg)}
+.hero-visual .mock{animation:float 7s ease-in-out infinite}
+.hero-visual .mock--back{animation-delay:-3.5s}
+@keyframes float{50%{translate:0 -8px}}
+.hero-visual .stamp{position:absolute;right:6%;bottom:6%;color:var(--rubor);font-size:clamp(1rem,2vw,1.3rem);text-align:right;line-height:1.15}
+
+/* ---------- Marquee ---------- */
+.marquee{background:var(--naranja);color:var(--tinta);overflow:hidden;border-block:1.5px solid var(--tinta)}
+.marquee-track{display:flex;width:max-content;animation:marq 32s linear infinite}
+.marquee span{font-family:var(--f-serif);font-style:italic;font-size:clamp(1.5rem,3.5vw,2.6rem);white-space:nowrap;padding:.35em .6em;display:flex;align-items:center;gap:.6em}
+.marquee svg{width:.6em;height:.6em}
+@keyframes marq{to{transform:translateX(-50%)}}
+
+/* ---------- Secciones ---------- */
+.section{padding-block:88px}
+@media (min-width:900px){.section{padding-block:128px}}
+.band-rubor{background:var(--rubor)}
+.band-fucsia{background:var(--fucsia);color:var(--blanco)}
+.band-naranja{background:var(--naranja);color:var(--tinta)}
+.band-durazno{background:var(--durazno);color:var(--tinta)}
+.band-tinta{background:var(--tinta);color:var(--blanco)}
+.h2{font-size:clamp(2.2rem,5.6vw,4.4rem)}
+.h2 em{font-style:normal;color:var(--fucsia)}
+.kicker{display:flex;align-items:center;gap:12px;margin-bottom:28px}
+.kicker .n{font-size:.72rem;font-weight:600;letter-spacing:.16em}
+.kicker .rule{flex:0 0 48px;height:1.5px;background:currentColor;opacity:.6}
+
+/* 02 Problema */
+.problem-grid{display:grid;gap:48px}
+@media (min-width:960px){.problem-grid{grid-template-columns:6fr 5fr;gap:80px}}
+.problem-text{display:grid;gap:18px;font-size:1.08rem;max-width:46ch;min-width:0}
+.signs{list-style:none;margin:0;padding:0;display:grid;border-top:1.5px solid var(--tinta)}
+.signs li{display:grid;grid-template-columns:36px 1fr;gap:12px;align-items:center;padding:22px 0;border-bottom:1px solid var(--linea);font-size:clamp(1.1rem,2vw,1.45rem);font-weight:500;line-height:1.3}
+.signs .ast{width:22px;height:22px;transition:transform .6s var(--ease)}
+.signs li:hover .ast{transform:rotate(90deg)}
+.pullquote{margin-top:72px;display:grid;gap:8px}
+@media (min-width:960px){.pullquote{margin-left:41%}}
+.pullquote p{max-width:15ch;font-family:var(--f-serif);font-style:italic;font-size:clamp(2rem,4.6vw,3.6rem);line-height:1.08;color:var(--fucsia)}
+.pullquote .arrow{width:120px;color:var(--tinta)}
+
+/* 03 Transformación */
+.tf-head{display:grid;gap:20px;margin-bottom:48px}
+@media (min-width:960px){.tf-head{grid-template-columns:1fr 1fr;align-items:end}}
+.tf-body{display:grid;gap:40px;align-items:center}
+@media (min-width:900px){.tf-body{grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:72px}}
+.tf-side{min-width:0}
+.changed{margin:14px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:0 24px}
+.changed div{border-top:1.5px solid var(--tinta);padding:14px 0 18px}
+.changed dt{font-weight:800;letter-spacing:-.01em}
+.changed dd{margin:4px 0 0;font-size:.92rem;color:var(--tinta-suave)}
+.tf-quote{margin-top:24px;font-size:clamp(1.2rem,2.2vw,1.6rem);line-height:1.25;font-weight:500}
+.compare{position:relative;aspect-ratio:900/1266;max-width:520px;width:100%;justify-self:center;max-width:100%;overflow:hidden;background:var(--rubor);user-select:none;touch-action:pan-y}
+.compare img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none}
+.compare .after{clip-path:inset(0 0 0 var(--pos,50%))}
+.compare .handle{position:absolute;top:0;bottom:0;left:var(--pos,50%);width:2px;background:var(--tinta);transform:translateX(-1px);pointer-events:none}
+.compare .handle::after{content:"";position:absolute;top:50%;left:50%;width:52px;height:52px;border-radius:50%;background:var(--blanco);border:1.5px solid var(--tinta);transform:translate(-50%,-50%)}
+.compare .handle svg{position:absolute;top:50%;left:50%;width:26px;height:26px;transform:translate(-50%,-50%);z-index:1}
+.compare input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
+.compare .chip{position:absolute;top:16px;font-size:.68rem;font-weight:600;letter-spacing:.16em;padding:.5em .9em;border-radius:999px;background:var(--blanco);color:var(--tinta);pointer-events:none}
+.compare .chip--a{left:16px}
+.compare .chip--d{right:16px;background:var(--fucsia);color:var(--blanco)}
+.compare:has(input:focus-visible){outline:3px solid var(--tinta);outline-offset:4px}
+.tf-legend{display:grid;gap:24px;grid-template-columns:1fr 1fr}
+.tf-legend h3{font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;margin-bottom:8px}
+.tf-legend .d h3{color:var(--fucsia)}
+.tf-legend p{font-size:.98rem}
+.examples{display:grid;gap:20px;margin-top:64px}
+@media (min-width:860px){.examples{grid-template-columns:1fr 1fr}}
+.ex{display:grid;grid-template-columns:1fr 1fr;border:1.5px solid var(--tinta)}
+.ex .cap{grid-column:1/-1;display:flex;justify-content:space-between;gap:12px;padding:14px 16px;border-bottom:1.5px solid var(--tinta);font-size:.78rem}
+.ex .cap b{font-weight:600;letter-spacing:.1em;text-transform:uppercase}
+.ex .side{padding:18px 16px 20px;display:grid;gap:10px;align-content:start;min-width:0}
+.ex .side + .side{border-left:1.5px solid var(--tinta)}
+.ex .lbl{font-size:.62rem;font-weight:600;letter-spacing:.16em}
+.ex .bf{background:#EDEAE6;font-family:Arial,Helvetica,sans-serif;color:#3a3a3a}
+.ex .af{background:var(--rubor)}
+.ex .mini{aspect-ratio:1;display:grid;place-items:center;border-radius:0}
+.disclaimer{margin-top:28px;display:flex;gap:10px;align-items:flex-start;font-size:.82rem;color:var(--tinta-suave);max-width:70ch}
+.disclaimer .ast{flex:0 0 14px;height:14px;margin-top:.3em}
+
+/* 04 Producto */
+.product-grid{display:grid;gap:56px}
+@media (min-width:960px){.product-grid{grid-template-columns:6fr 6fr;gap:72px;align-items:center}}
+.product-grid .h2 em{color:var(--fucsia)}
+.product-lead{font-size:1.15rem;max-width:44ch;margin-top:24px;color:#F3E3DB}
+.fan{position:relative;aspect-ratio:1/1;max-width:560px;width:100%;justify-self:center}
+.fan .page-wrap{position:absolute;width:44%;transition:transform .6s var(--ease)}
+.fan .p1{left:2%;top:16%;transform:rotate(-9deg)}
+.fan .p2{left:20%;top:8%;transform:rotate(-2deg)}
+.fan .p3{left:38%;top:12%;transform:rotate(5deg)}
+.fan .p4{left:54%;top:22%;transform:rotate(11deg)}
+.fan:hover .p1{transform:rotate(-13deg) translate(-12px,-4px)}
+.fan:hover .p4{transform:rotate(15deg) translate(12px,-4px)}
+.fan .ring{position:absolute;right:0;bottom:2%;width:34%;aspect-ratio:1;border:1.5px solid var(--rubor);border-radius:50%}
+.features{list-style:none;margin:40px 0;padding:0;display:grid;grid-template-columns:1fr 1fr;border-top:1px solid #FFFFFF33}
+.features li{padding:18px 12px 18px 0;border-bottom:1px solid #FFFFFF33;display:grid;gap:2px;min-width:0}
+.features b{font-size:clamp(1.6rem,3.4vw,2.3rem);font-weight:800;color:var(--fucsia);line-height:1;letter-spacing:-.03em}
+.features span{font-size:.92rem;color:#F3E3DB}
+
+/* 05 Módulos */
+.modules-head{display:grid;gap:20px;margin-bottom:56px}
+@media (min-width:960px){.modules-head{grid-template-columns:1fr 1fr;align-items:end}}
+.modules{display:grid;gap:0}
+.module{display:grid;gap:12px 40px;padding:40px 28px;position:relative;overflow:hidden}
+@media (min-width:860px){.module{grid-template-columns:minmax(200px,4fr) 8fr;padding:56px 48px;align-items:end}.module:nth-child(even){margin-left:8%}.module:nth-child(odd){margin-right:8%}}
+.module .num{font-weight:800;font-size:clamp(5rem,14vw,10rem);line-height:.8;letter-spacing:-.06em}
+.module h3{font-size:clamp(1.4rem,2.8vw,2.2rem);letter-spacing:-.02em;margin-bottom:10px}
+.module p{font-size:1.05rem;max-width:46ch}
+.module .body{min-width:0}
+.m-fucsia{background:var(--fucsia);color:var(--blanco)}
+.m-naranja{background:var(--naranja);color:var(--tinta)}
+.m-rubor{background:var(--rubor);color:var(--tinta)}
+.m-rubor .num{color:var(--fucsia)}
+
+/* 06 Galería */
+.gallery-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:24px;margin-bottom:40px}
+.gallery-ctrl{display:flex;gap:10px}
+.icon-btn{width:52px;height:52px;border-radius:50%;border:1.5px solid var(--tinta);background:transparent;color:var(--tinta);display:grid;place-items:center;cursor:pointer;transition:background .25s,color .25s}
+.icon-btn:hover{background:var(--tinta);color:var(--blanco)}
+.icon-btn svg{width:22px;height:22px}
+.gallery{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:20px;scrollbar-width:thin;scrollbar-color:var(--fucsia) transparent}
+.gallery::-webkit-scrollbar{height:4px}
+.gallery::-webkit-scrollbar-thumb{background:var(--fucsia)}
+.g-item{flex:0 0 min(68vw,290px);scroll-snap-align:start;display:grid;gap:12px;background:none;border:0;padding:0;text-align:left;cursor:zoom-in;font:inherit;color:inherit}
+.g-item .page{transition:transform .5s var(--ease)}
+.g-item:hover .page{transform:translateY(-6px) rotate(-1deg)}
+.g-item .gcap{display:flex;justify-content:space-between;gap:8px;font-size:.8rem}
+.g-item .gcap b{font-weight:600}
+.gallery-note{margin-top:16px;font-size:.8rem;color:var(--tinta-suave)}
+
+/* Lightbox */
+dialog.lightbox{border:0;padding:0;background:transparent;max-width:none;max-height:none;width:100%;height:100%;margin:0;color:var(--blanco)}
+dialog.lightbox::backdrop{background:#1A1414EE}
+.lb-inner{height:100%;display:grid;grid-template-rows:auto 1fr auto;gap:16px;padding:max(16px,env(safe-area-inset-top,0px)) var(--gutter-r) max(16px,env(safe-area-inset-bottom,0px)) var(--gutter)}
+.lb-top{display:flex;justify-content:space-between;align-items:center;gap:16px;font-size:.85rem}
+.lb-stage{display:grid;place-items:center;min-height:0}
+.lb-page{width:min(88vw, calc((100dvh - 190px) * .7071));max-width:640px}
+.lb-bottom{display:flex;justify-content:center;gap:12px}
+.lightbox .icon-btn{border-color:var(--rubor);color:var(--rubor)}
+.lightbox .icon-btn:hover{background:var(--rubor);color:var(--tinta)}
+
+/* 07 Beneficios */
+.benefits-grid{display:grid;gap:48px}
+@media (min-width:960px){.benefits-grid{grid-template-columns:5fr 7fr;gap:80px}}
+.benefits{list-style:none;margin:0;padding:0;display:grid;gap:0;counter-reset:b}
+@media (min-width:640px){.benefits{grid-template-columns:1fr 1fr;column-gap:32px}}
+.benefits li{display:grid;grid-template-columns:44px 1fr;gap:12px;padding:22px 0;border-top:1.5px solid var(--tinta);font-size:1.08rem;font-weight:500;line-height:1.35}
+.benefits svg{width:34px;height:14px;margin-top:.35em;color:var(--fucsia)}
+.benefits-note{margin-top:28px;font-size:.85rem;color:var(--tinta-suave);max-width:52ch}
+
+/* 08 Para quién */
+.who-head{display:grid;gap:24px;margin-bottom:48px}
+@media (min-width:960px){.who-head{grid-template-columns:7fr 5fr;align-items:end;gap:72px}}
+.who-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+@media (min-width:860px){.who-grid{grid-template-columns:repeat(4,1fr);gap:16px}}
+.tile{position:relative;aspect-ratio:4/5;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between;padding:16px;min-width:0}
+.tile .ill{flex:1;display:grid;place-items:center}
+.tile .ill svg{width:62%;max-width:150px;height:auto}
+.tile .tl{position:relative;z-index:1;display:flex;justify-content:space-between;align-items:end;gap:8px;font-weight:600;font-size:.95rem;line-height:1.2}
+.tile .tl small{font-weight:500;font-size:.7rem;letter-spacing:.14em;opacity:.8}
+.tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.tile.has-photo .ill{display:none}
+.tile.has-photo{padding:0;justify-content:flex-end}
+.tile.has-photo .tl{background:var(--blanco);color:var(--tinta);padding:12px 14px}
+.tile.has-photo:nth-child(4n+2) .tl{background:var(--rubor)}
+.tile.has-photo:nth-child(4n+3) .tl{background:var(--fucsia);color:var(--blanco)}
+.tile.has-photo:nth-child(4n) .tl{background:var(--tinta);color:var(--rubor)}
+.tile img{transition:transform .8s var(--ease)}
+.tile:hover img{transform:scale(1.04)}
+.t-rubor{background:var(--rubor)}.t-durazno{background:var(--durazno)}.t-fucsia{background:var(--fucsia);color:var(--blanco)}.t-naranja{background:var(--naranja)}.t-blanco{background:var(--blanco)}.t-tinta{background:var(--tinta);color:var(--rubor)}
+.no-prior{margin-top:48px;display:grid;gap:12px;max-width:60ch;font-size:1.1rem}
+.no-prior strong{font-weight:600}
+
+/* 09 Oferta */
+.offer{display:grid;gap:40px;align-items:center}
+@media (min-width:960px){.offer{grid-template-columns:5fr 7fr;gap:72px}}
+.offer-side{display:grid;gap:20px}
+.offer-side .serif{font-size:clamp(1.8rem,3.6vw,2.8rem);line-height:1.1;color:var(--fucsia)}
+.card{background:var(--blanco);border:1.5px solid var(--fucsia);padding:clamp(28px,4vw,48px);display:grid;gap:24px;position:relative;min-width:0}
+.card .corner{position:absolute;top:-18px;right:24px;width:36px;height:36px;color:var(--fucsia);background:var(--rubor);padding:4px}
+.card .pname{font-size:.78rem;font-weight:600;letter-spacing:.18em;color:var(--fucsia)}
+.card .psub{font-size:1.05rem;font-weight:500;margin-top:4px}
+.price{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;border-block:1.5px solid var(--tinta);padding-block:18px}
+.price .amt{font-size:clamp(3.4rem,9vw,5.4rem);font-weight:800;letter-spacing:-.05em;line-height:.9}
+.price .cur{font-size:1rem;font-weight:600;letter-spacing:.1em}
+.price .once{margin-left:auto;font-size:.85rem;color:var(--tinta-suave)}
+.includes{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.includes li{display:grid;grid-template-columns:22px 1fr;gap:10px;align-items:start}
+.includes svg{width:18px;height:18px;margin-top:.25em;color:var(--fucsia)}
+.card .btn{width:100%}
+.card .fine{font-size:.78rem;color:var(--tinta-suave);text-align:center}
+
+/* 10 Asesoría */
+.consult{display:grid;gap:40px}
+@media (min-width:960px){.consult{grid-template-columns:7fr 5fr;gap:72px;align-items:end}}
+.consult .name{font-family:var(--f-serif);font-style:italic;font-size:clamp(1.8rem,3.4vw,2.6rem);line-height:1.1;margin-top:28px}
+.consult .desc{font-size:1.1rem;max-width:44ch;margin-top:14px}
+.facts{display:grid;border-top:1.5px solid var(--tinta)}
+.facts div{display:flex;justify-content:space-between;gap:16px;padding:16px 0;border-bottom:1.5px solid var(--tinta);align-items:baseline}
+.facts dt{font-size:.75rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase}
+.facts dd{margin:0;font-weight:600;text-align:right}
+.facts .big{font-size:1.9rem;font-weight:800;letter-spacing:-.03em}
+.consult-cta{display:grid;gap:12px;margin-top:28px}
+
+/* 11 Sobre RE. */
+.about{display:grid;gap:48px}
+@media (min-width:960px){.about{grid-template-columns:5fr 7fr;gap:80px}}
+.about-text{display:grid;gap:18px;font-size:1.1rem;max-width:50ch}
+.about-quote{font-family:var(--f-serif);font-style:italic;font-size:clamp(1.7rem,3.2vw,2.4rem);line-height:1.15;color:var(--fucsia);margin-top:12px}
+.triad{margin-top:72px;display:grid;gap:4px}
+.triad div{font-weight:800;font-size:clamp(2.8rem,10vw,8rem);letter-spacing:-.05em;line-height:.92;transition:transform .6s var(--ease)}
+.triad div:nth-child(2){padding-left:8%}
+.triad div:nth-child(3){padding-left:16%}
+.triad div span{color:var(--fucsia)}
+.triad div:hover{transform:translateX(12px)}
+
+/* 12 FAQ */
+.faq-grid{display:grid;gap:40px}
+@media (min-width:960px){.faq-grid{grid-template-columns:4fr 8fr;gap:80px}}
+.faq{border-top:1.5px solid var(--tinta)}
+.faq details{border-bottom:1.5px solid var(--tinta)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:24px 0;font-weight:600;font-size:clamp(1.02rem,1.8vw,1.25rem);line-height:1.3}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary .pm{flex:0 0 36px;height:36px;border:1.5px solid var(--tinta);border-radius:50%;display:grid;place-items:center;transition:transform .4s var(--ease),background .25s,color .25s}
+.faq summary .pm svg{width:14px;height:14px}
+.faq details[open] summary .pm{transform:rotate(45deg);background:var(--fucsia);border-color:var(--fucsia);color:var(--blanco)}
+.faq .ans{padding:0 56px 26px 0;color:var(--tinta-suave);max-width:62ch}
+.faq .pending{display:inline-block;margin-top:6px;font-size:.78rem;color:var(--fucsia);font-weight:500}
+
+/* 13 Cierre */
+.closing{padding-block:96px 104px;text-align:left;position:relative;overflow:hidden}
+.closing .wrap{display:grid;gap:32px;position:relative}
+.closing h2{font-size:clamp(3rem,10vw,8.4rem);color:var(--rubor);max-width:12ch;letter-spacing:-.05em;line-height:.92}
+.closing p{font-size:clamp(1.1rem,2vw,1.4rem);max-width:32ch}
+.closing .bigre{position:absolute;right:-.06em;bottom:-.24em;font-weight:800;font-size:clamp(10rem,34vw,30rem);letter-spacing:-.08em;line-height:1;color:var(--rubor);opacity:.14;pointer-events:none;user-select:none}
+.closing .ast-c{position:absolute;right:max(20px,8%);top:-24px;width:80px;color:var(--rubor)}
+
+/* Footer */
+.site-footer{background:var(--tinta);color:var(--rubor);padding-block:64px max(40px,env(safe-area-inset-bottom,0px))}
+.foot{display:grid;gap:40px}
+@media (min-width:860px){.foot{grid-template-columns:5fr 3fr 3fr 3fr}}
+.foot .logo{color:var(--rubor);font-size:3rem}
+.foot h4{margin:0 0 12px;font-size:.7rem;letter-spacing:.18em;font-weight:600;text-transform:uppercase;color:var(--durazno)}
+.foot ul{list-style:none;margin:0;padding:0;display:grid;gap:8px;font-size:.92rem}
+.foot a,.foot button.linklike{color:var(--rubor);text-decoration:none;background:none;border:0;padding:0;font:inherit;cursor:pointer;text-align:left}
+.foot a:hover,.foot button.linklike:hover{text-decoration:underline;text-underline-offset:4px}
+.foot .tagline{font-family:var(--f-serif);font-style:italic;font-size:1.3rem;margin-top:12px}
+.foot-bottom{margin-top:56px;padding-top:20px;border-top:1px solid #FFE9DE33;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:.78rem;color:#FFE9DEB3}
+
+/* WhatsApp flotante */
+.wa{position:fixed;right:calc(18px + env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:40;width:58px;height:58px;border-radius:50%;background:var(--tinta);color:var(--blanco);display:grid;place-items:center;text-decoration:none;border:2px solid var(--rubor);transition:transform .35s var(--ease)}
+.wa:hover{transform:scale(1.06) rotate(-6deg)}
+.wa svg{width:28px;height:28px}
+
+/* Toast */
+.toast{position:fixed;left:50%;bottom:calc(92px + env(safe-area-inset-bottom,0px));transform:translate(-50%,20px);background:var(--tinta);color:var(--rubor);padding:14px 20px;font-size:.88rem;max-width:min(92vw,440px);z-index:70;opacity:0;pointer-events:none;transition:opacity .3s,transform .3s var(--ease)}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+
+/* Modal legal */
+dialog.legal{border:1.5px solid var(--tinta);padding:0;max-width:min(92vw,560px);background:var(--blanco);color:var(--tinta)}
+dialog.legal::backdrop{background:#1A1414B3}
+.legal-in{padding:32px;display:grid;gap:16px}
+.legal-in h3{font-size:1.5rem}
+
+/* ============ Páginas del workbook (se escalan con container queries) ============ */
+.page{container-type:inline-size;aspect-ratio:595.5/842.25;width:100%;max-width:100%;position:relative;overflow:hidden;background:var(--blanco);color:var(--tinta);border:1px solid #1A14141F;box-shadow:0 1px 0 #1A14140D}
+.page > .pg{position:absolute;inset:0;padding:8cqw;display:flex;flex-direction:column;font-size:3.1cqw;line-height:1.45}
+.page img.pg-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.pg .pg-top{display:flex;justify-content:space-between;font-size:2.4cqw;font-weight:600;letter-spacing:.14em;text-transform:uppercase}
+.pg .pg-foot{margin-top:auto;display:flex;justify-content:space-between;font-size:2.3cqw;letter-spacing:.1em}
+.pg .lg{font-weight:800;letter-spacing:-.06em;font-size:6cqw;line-height:1;text-transform:none}
+.pg h4{margin:0;font-weight:800;letter-spacing:-.04em;line-height:1}
+.pg .sf{font-family:var(--f-serif);font-style:italic}
+.pg .lines{display:grid;gap:4.6cqw;margin-top:3cqw}
+.pg .lines i{display:block;height:0;border-bottom:.3cqw solid #1A141433}
+.pg .q{font-weight:600;font-size:3.2cqw;margin-top:5cqw}
+.pg .q small{display:block;font-weight:400;color:var(--tinta-suave);font-size:2.7cqw}
+.pg.cover{background:var(--fucsia);color:var(--rubor)}
+.pg.cover h4{font-size:17cqw;margin-top:auto;color:var(--rubor)}
+.pg.cover .sub{font-size:3.4cqw;font-weight:500;margin-top:4cqw;color:var(--blanco)}
+.pg.cover .sf{font-size:5.6cqw;margin-top:8cqw}
+.pg.cover .ring{position:absolute;right:-14cqw;top:12cqw;width:62cqw;aspect-ratio:1;border:.35cqw solid var(--rubor);border-radius:50%}
+.pg.cover .a{position:absolute;right:10cqw;top:22cqw;width:12cqw;color:var(--naranja)}
+.pg.opener{color:var(--tinta)}
+.pg.opener .big{font-weight:800;font-size:46cqw;letter-spacing:-.07em;line-height:.8;margin-top:auto}
+.pg.opener h4{font-size:9cqw;margin-top:4cqw}
+.pg.opener .sf{font-size:4.6cqw;margin-top:3cqw}
+.pg.index ol{list-style:none;margin:8cqw 0 0;padding:0;display:grid}
+.pg.index li{display:flex;gap:4cqw;align-items:baseline;padding:3.4cqw 0;border-top:.3cqw solid var(--tinta);font-weight:600;font-size:3.6cqw}
+.pg.index li b{font-weight:800;font-size:6cqw;color:var(--fucsia);min-width:10cqw;letter-spacing:-.04em}
+.pg.example .box{border:.3cqw solid var(--tinta);padding:4cqw;margin-top:4cqw;background:var(--blanco)}
+.pg.example .box b{display:block;font-size:2.4cqw;letter-spacing:.14em;color:var(--fucsia);margin-bottom:1.5cqw}
+.pg.diag .row{display:flex;justify-content:space-between;align-items:center;gap:3cqw;padding:3cqw 0;border-bottom:.3cqw solid #1A141426;font-size:3cqw}
+.pg.diag .dots{display:flex;gap:1.6cqw;flex:0 0 auto}
+.pg.diag .dots i{width:3.6cqw;height:3.6cqw;border-radius:50%;border:.3cqw solid var(--tinta)}
+.pg.diag .dots i.f{background:var(--fucsia);border-color:var(--fucsia)}
+.pg.map .orbit{position:relative;flex:1;margin:4cqw 0}
+.pg.map .core{position:absolute;left:50%;top:50%;width:30cqw;aspect-ratio:1;border-radius:50%;background:var(--fucsia);color:var(--rubor);transform:translate(-50%,-50%);display:grid;place-items:center;font-weight:800;font-size:6.4cqw;letter-spacing:-.04em}
+.pg.map .ringo{position:absolute;left:50%;top:50%;width:72cqw;aspect-ratio:1;border:.3cqw dashed var(--tinta);border-radius:50%;transform:translate(-50%,-50%)}
+.pg.map .node{position:absolute;transform:translate(-50%,-50%);background:var(--rubor);border:.3cqw solid var(--tinta);border-radius:99cqw;padding:1.4cqw 2.6cqw;font-size:2.7cqw;font-weight:600;white-space:nowrap}
+.pg.plan .grid{display:grid;grid-template-columns:repeat(6,1fr);gap:1.4cqw;margin-top:5cqw}
+.pg.plan .grid i{aspect-ratio:1;border:.3cqw solid var(--tinta);font-style:normal;font-size:2.2cqw;padding:.8cqw;font-weight:600}
+.pg.plan .grid i:nth-child(7n+3){background:var(--durazno)}
+.pg.plan .grid i:nth-child(11n+5){background:var(--fucsia);color:var(--blanco);border-color:var(--fucsia)}
+.pg.plan .wk{display:grid;grid-template-columns:repeat(4,1fr);gap:2cqw;margin-top:5cqw;font-size:2.5cqw}
+.pg.plan .wk div{border-top:.6cqw solid var(--tinta);padding-top:1.6cqw}
+.pg.plan .wk b{display:block;font-size:2.2cqw;letter-spacing:.12em}
+
+/* Reveal sutil (contenido siempre visible; solo se desplaza un poco) */
+.rv{transition:transform .9s var(--ease)}
+.js .rv.pending{transform:translateY(22px)}
+
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .js .rv.pending{transform:none}
+}
+</style>
+</head>
+<body>
+
+<!-- SVG sprite de grafismos -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-ast" viewBox="0 0 40 40"><g stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M20 3v34"/><path d="M5.3 11.5l29.4 17"/><path d="M5.3 28.5l29.4-17"/></g></symbol>
+    <symbol id="i-arrow" viewBox="0 0 48 16"><path d="M1 8h45M39 1.5L46 8l-7 6.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-arrow-long" viewBox="0 0 120 40"><path d="M2 6c20 26 60 32 112 26M106 24l8 8-9 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-check" viewBox="0 0 20 20"><circle cx="10" cy="10" r="8.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M6 10.4l2.6 2.6L14 7.6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 14 14"><path d="M7 1v12M1 7h12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="i-left" viewBox="0 0 24 24"><path d="M20 12H4M10 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-right" viewBox="0 0 24 24"><path d="M4 12h16M14 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M5 5l14 14M19 5L5 19" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="i-wa" viewBox="0 0 32 32"><path fill="currentColor" d="M16 3.2A12.7 12.7 0 0 0 5.1 22.4L3.3 28.8l6.6-1.7A12.7 12.7 0 1 0 16 3.2zm0 23.1c-2 0-3.9-.5-5.5-1.5l-.4-.2-3.9 1 1-3.8-.3-.4A10.5 10.5 0 1 1 16 26.3zm5.8-7.8c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7 0a8.6 8.6 0 0 1-4.3-3.7c-.3-.5.3-.5.9-1.6.1-.2 0-.4 0-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4s-1.1 1.1-1.1 2.7 1.2 3.1 1.3 3.3 2.3 3.5 5.6 4.9c2.1.9 2.9 1 4 .8.6-.1 1.9-.8 2.2-1.5s.3-1.4.2-1.5-.3-.2-.6-.4z"/></symbol>
+  </defs>
+</svg>
+
+<header class="site-header" id="top">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="re. Estudio Creativo, inicio">re<span>.</span></a>
+    <nav class="nav" aria-label="Principal">
+      <a href="#producto">El workbook</a>
+      <a href="#contenido">Qué aprendés</a>
+      <a href="#vista-previa">Vista previa</a>
+      <a href="#asesoria">Asesoría</a>
+      <a href="#preguntas">Preguntas</a>
+    </nav>
+    <a href="#comprar" class="btn btn--sm" data-action="buy" data-product="adn">Comprar</a>
+  </div>
+</header>
+
+<main id="contenido-principal">
+
+<!-- 01 · HERO -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="wrap">
+    <div class="hero-copy">
+      <span class="tag">Workbook digital para emprendedoras</span>
+      <h1 id="hero-title">
+        <span class="w">Tu negocio tiene potencial.</span>
+        <span class="l2"><span class="w" style="animation-delay:.15s">Es hora de que tu marca lo refleje.</span></span>
+      </h1>
+      <p class="hero-lead">Una guía práctica para transformar tu producto o servicio en una marca con identidad, valor y personalidad.</p>
+      <div class="hero-cta">
+        <a href="#comprar" class="btn" data-action="buy" data-product="adn">Quiero descubrir mi marca <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <span class="hero-note">Descarga digital · A tu ritmo · Pago único</span>
+      </div>
+    </div>
+    <div class="hero-visual" aria-label="Mockup del workbook ADN de Marca: portada y página del Mapa ADN" role="img">
+      <div class="block"></div>
+      <div class="ring"></div>
+      <svg class="ast-big spin" aria-hidden="true" viewBox="0 0 40 40"><use href="#i-ast"/></svg>
+      <div class="mock mock--back" data-page="example"></div>
+      <div class="mock mock--front" data-page="cover"></div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Repensar <svg><use href="#i-ast"/></svg> Recrear <svg><use href="#i-ast"/></svg> Reinventar <svg><use href="#i-ast"/></svg> Repensar <svg><use href="#i-ast"/></svg> Recrear <svg><use href="#i-ast"/></svg> Reinventar <svg><use href="#i-ast"/></svg></span>
+    <span>Repensar <svg><use href="#i-ast"/></svg> Recrear <svg><use href="#i-ast"/></svg> Reinventar <svg><use href="#i-ast"/></svg> Repensar <svg><use href="#i-ast"/></svg> Recrear <svg><use href="#i-ast"/></svg> Reinventar <svg><use href="#i-ast"/></svg></span>
+  </div>
+</div>
+
+<!-- 02 · PROBLEMA -->
+<section class="section band-rubor" aria-labelledby="s2">
+  <div class="wrap">
+    <div class="problem-grid">
+      <div class="rv">
+        <div class="kicker"><span class="rule"></span><span class="n">TE SUENA</span></div>
+        <h2 class="h2" id="s2">¿Tu marca refleja lo que realmente <em>valés</em>?</h2>
+        <div class="problem-text" style="margin-top:32px">
+          <p>Le dedicás horas a tu emprendimiento. Cuidás cada detalle. Sabés que lo que ofrecés es bueno.</p>
+          <p>Pero cuando llega el momento de mostrarlo, comunicarlo o venderlo, sentís que algo no termina de encajar.</p>
+        </div>
+      </div>
+      <ul class="signs rv" aria-label="Situaciones frecuentes">
+        <li><svg class="ast" aria-hidden="true"><use href="#i-ast"/></svg>Tu imagen no transmite la calidad de tu trabajo.</li>
+        <li><svg class="ast" aria-hidden="true"><use href="#i-ast"/></svg>No sabés qué te diferencia.</li>
+        <li><svg class="ast" aria-hidden="true"><use href="#i-ast"/></svg>Te cuesta comunicar lo que vendés.</li>
+        <li><svg class="ast" aria-hidden="true"><use href="#i-ast"/></svg>Sentís que tu negocio necesita evolucionar.</li>
+      </ul>
+    </div>
+    <div class="pullquote rv">
+      <svg class="arrow" aria-hidden="true" viewBox="0 0 120 40"><use href="#i-arrow-long"/></svg>
+      <p>No necesitás empezar de cero. Necesitás una nueva mirada.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 03 · TRANSFORMACIÓN -->
+<section class="section" aria-labelledby="s3">
+  <div class="wrap">
+    <div class="tf-head rv">
+      <div>
+        <div class="kicker"><span class="rule"></span><span class="n">LA TRANSFORMACIÓN</span></div>
+        <h2 class="h2" id="s3">Mismo producto. <em>Otra percepción.</em></h2>
+      </div>
+      <p class="muted" style="max-width:44ch">La vela es la misma. Cambia la forma de presentarla: la luz, el fondo, la etiqueta, el packaging. Deslizá sobre la foto para comparar.</p>
+    </div>
+
+    <div class="tf-body">
+      <div class="compare rv" id="compare" style="--pos:50%">
+        <img src="img/antes-vela.webp" alt="Antes: vela con etiqueta genérica fotografiada sobre una mesa desordenada" width="900" height="1266" loading="lazy" decoding="async">
+        <img class="after" src="img/despues-vela.webp" alt="Después: la misma vela con etiqueta de marca, caja a juego y fotografía con luz cálida" width="900" height="1266" loading="lazy" decoding="async">
+        <span class="chip chip--a">ANTES</span>
+        <span class="chip chip--d">DESPUÉS</span>
+        <div class="handle"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6" fill="none" stroke="#1A1414" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <label for="compare-range" class="sr-only">Deslizá para comparar antes y después</label>
+        <input type="range" id="compare-range" min="0" max="100" value="50">
+      </div>
+      <div class="tf-side rv">
+        <div class="tf-legend">
+          <div><h3>Antes</h3><p>Fotografía improvisada, etiqueta genérica y presentación sin identidad.</p></div>
+          <div class="d"><h3>Después</h3><p>Fotografía editorial, packaging coherente, identidad visual y comunicación estratégica.</p></div>
+        </div>
+        <div class="eyebrow" style="margin-top:36px">Qué cambió</div>
+        <dl class="changed">
+          <div><dt>Fotografía</dt><dd>De la mesa desordenada a una composición con luz cálida.</dd></div>
+          <div><dt>Identidad visual</dt><dd>Una etiqueta con nombre, colores y tipografía propios.</dd></div>
+          <div><dt>Packaging</dt><dd>Caja a juego que convierte la compra en regalo.</dd></div>
+          <div><dt>Comunicación</dt><dd>El producto cuenta qué es y para quién está pensado.</dd></div>
+        </dl>
+        <p class="tf-quote"><span class="serif" style="color:var(--fucsia)">RE.pensá lo que vendés:</span> el producto es el mismo, cambia cómo se presenta.</p>
+      </div>
+    </div>
+
+    <div class="examples">
+      <article class="ex rv" aria-label="Ejemplo de producto: cerámica artesanal">
+        <div class="cap"><b>Producto · Cerámica</b><span class="muted">Etiqueta y nombre</span></div>
+        <div class="side bf">
+          <span class="lbl">ANTES</span>
+          <div class="mini" style="background:#DDD8D1">
+            <svg viewBox="0 0 120 120" width="70%" aria-hidden="true"><path d="M40 30h40l-4 16c14 8 18 22 14 40-3 14-14 20-30 20s-27-6-30-20c-4-18 0-32 14-40z" fill="#C9B9A6" stroke="#8D7F70" stroke-width="2"/><rect x="44" y="64" width="32" height="16" fill="#fff" stroke="#999"/></svg>
+          </div>
+          <span style="font-size:.85rem">"Tazas y cosas de cerámica, pedidos por privado"</span>
+        </div>
+        <div class="side af">
+          <span class="lbl" style="color:var(--fucsia)">DESPUÉS</span>
+          <div class="mini" style="background:var(--naranja)">
+            <svg viewBox="0 0 120 120" width="70%" aria-hidden="true"><path d="M40 30h40l-4 16c14 8 18 22 14 40-3 14-14 20-30 20s-27-6-30-20c-4-18 0-32 14-40z" fill="#FFE9DE" stroke="#1A1414" stroke-width="1.5"/><text x="60" y="78" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-weight="800" font-size="13" fill="#1A1414" letter-spacing="-.5">barro.</text></svg>
+          </div>
+          <span style="font-size:.85rem;font-weight:500">barro. <span class="serif" style="color:var(--fucsia)">piezas para la mesa lenta</span></span>
+        </div>
+      </article>
+      <article class="ex rv" aria-label="Ejemplo de servicio: profesional del bienestar">
+        <div class="cap"><b>Servicio · Bienestar</b><span class="muted">Propuesta de valor</span></div>
+        <div class="side bf">
+          <span class="lbl">ANTES</span>
+          <div class="mini" style="background:#DDD8D1;padding:12%;place-items:stretch">
+            <div style="display:grid;gap:6px;align-content:center;font-size:.78rem;color:#444"><b style="font-size:.92rem">Lic. en Nutrición</b><span>Consultas · Planes · Turnos</span><span>Escribime por DM</span></div>
+          </div>
+          <span style="font-size:.85rem">Bio genérica, sin enfoque ni público claro.</span>
+        </div>
+        <div class="side af">
+          <span class="lbl" style="color:var(--fucsia)">DESPUÉS</span>
+          <div class="mini" style="background:var(--fucsia);color:var(--rubor);padding:12%;place-items:stretch">
+            <div style="display:grid;gap:6px;align-content:center"><b style="font-weight:800;font-size:1.15rem;letter-spacing:-.03em;line-height:1.05">comer en calma.</b><span class="serif" style="font-size:.95rem;line-height:1.2">Nutrición para mujeres que trabajan todo el día.</span></div>
+          </div>
+          <span style="font-size:.85rem;font-weight:500">Nombre, foco y una promesa clara.</span>
+        </div>
+      </article>
+    </div>
+
+    <p class="disclaimer"><svg class="ast" aria-hidden="true"><use href="#i-ast"/></svg>Las imágenes, marcas y productos de esta sección son ejemplos ilustrativos de transformación de marca creados por RE. No son resultados de clientas reales.</p>
+  </div>
+</section>
+
+<!-- 04 · PRODUCTO -->
+<section class="section band-tinta on-dark" id="producto" aria-labelledby="s4">
+  <div class="wrap">
+    <div class="product-grid">
+      <div class="fan rv" role="img" aria-label="Portada y páginas interiores del workbook ADN de Marca">
+        <div class="ring"></div>
+        <div class="page-wrap p1" data-page="opener1"></div>
+        <div class="page-wrap p2" data-page="exercise"></div>
+        <div class="page-wrap p3" data-page="plan"></div>
+        <div class="page-wrap p4" data-page="cover"></div>
+      </div>
+      <div class="rv">
+        <div class="kicker"><span class="rule"></span><span class="n">EL PRODUCTO</span></div>
+        <h2 class="h2" id="s4">Esto es <em>ADN de Marca.</em></h2>
+        <p class="product-lead">Un workbook diseñado para ayudarte a descubrir la esencia de tu negocio, reconocer su verdadero valor y construir una marca que comunique con intención.</p>
+        <ul class="features">
+          <li><b>5</b><span>módulos estratégicos</span></li>
+          <li><b>16</b><span>ejercicios guiados</span></li>
+          <li><b>P+S</b><span>ejemplos para productos y servicios</span></li>
+          <li><b>✱</b><span>herramientas de diagnóstico</span></li>
+          <li><b>ADN</b><span>Mapa ADN de Marca</span></li>
+          <li><b>30</b><span>días de plan de acción</span></li>
+        </ul>
+        <a href="#comprar" class="btn" data-action="buy" data-product="adn">Quiero mi workbook <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 05 · MÓDULOS -->
+<section class="section" id="contenido" aria-labelledby="s5">
+  <div class="wrap">
+    <div class="modules-head rv">
+      <div>
+        <div class="kicker"><span class="rule"></span><span class="n">QUÉ VAS A APRENDER</span></div>
+        <h2 class="h2" id="s5">Cinco módulos. <em>Un recorrido.</em></h2>
+      </div>
+      <p class="muted" style="max-width:44ch">Cada módulo se apoya en el anterior: empezás por quién sos y terminás con un plan concreto para los próximos 30 días.</p>
+    </div>
+    <ol class="modules" style="list-style:none;margin:0;padding:0">
+      <li class="module m-fucsia rv"><span class="num">01</span><div class="body"><h3>Tu esencia</h3><p>Reconocé tu historia, tus valores y el propósito detrás de tu negocio.</p></div></li>
+      <li class="module m-naranja rv"><span class="num">02</span><div class="body"><h3>El verdadero valor de lo que vendés</h3><p>Descubrí qué aportás, quién es tu cliente y qué experiencia estás ofreciendo.</p></div></li>
+      <li class="module m-rubor rv"><span class="num">03</span><div class="body"><h3>Tu diferencial</h3><p>Identificá qué hace especial a tu negocio y construí una propuesta de valor.</p></div></li>
+      <li class="module m-fucsia rv"><span class="num">04</span><div class="body"><h3>El universo de tu marca</h3><p>Trabajá tu personalidad, identidad visual, fotografía, presentación y experiencia del cliente.</p></div></li>
+      <li class="module m-naranja rv"><span class="num">05</span><div class="body"><h3>De la idea a la acción</h3><p>Transformá lo aprendido en una estrategia concreta para los próximos 30 días.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- 06 · VISTA PREVIA -->
+<section class="section band-rubor" id="vista-previa" aria-labelledby="s6">
+  <div class="wrap">
+    <div class="gallery-head">
+      <div>
+        <div class="kicker"><span class="rule"></span><span class="n">VISTA PREVIA</span></div>
+        <h2 class="h2" id="s6">Espiá un poco lo que hay <em>adentro.</em></h2>
+      </div>
+      <div class="gallery-ctrl">
+        <button class="icon-btn" type="button" id="g-prev" aria-label="Páginas anteriores"><svg aria-hidden="true"><use href="#i-left"/></svg></button>
+        <button class="icon-btn" type="button" id="g-next" aria-label="Páginas siguientes"><svg aria-hidden="true"><use href="#i-right"/></svg></button>
+      </div>
+    </div>
+    <div class="gallery" id="gallery" tabindex="0" aria-label="Galería de páginas del workbook"></div>
+    <p class="gallery-note">Tocá una página para ampliarla. Es una muestra: el workbook completo se entrega al comprar.</p>
+  </div>
+</section>
+
+<dialog class="lightbox" id="lightbox" aria-label="Página ampliada">
+  <div class="lb-inner">
+    <div class="lb-top"><span id="lb-cap"></span><button class="icon-btn" type="button" id="lb-close" aria-label="Cerrar"><svg aria-hidden="true"><use href="#i-x"/></svg></button></div>
+    <div class="lb-stage"><div class="lb-page" id="lb-page"></div></div>
+    <div class="lb-bottom">
+      <button class="icon-btn" type="button" id="lb-prev" aria-label="Página anterior"><svg aria-hidden="true"><use href="#i-left"/></svg></button>
+      <button class="icon-btn" type="button" id="lb-next" aria-label="Página siguiente"><svg aria-hidden="true"><use href="#i-right"/></svg></button>
+    </div>
+  </div>
+</dialog>
+
+<!-- 07 · BENEFICIOS -->
+<section class="section" aria-labelledby="s7">
+  <div class="wrap">
+    <div class="benefits-grid">
+      <div class="rv">
+        <div class="kicker"><span class="rule"></span><span class="n">AL TERMINAR</span></div>
+        <h2 class="h2" id="s7">Menos improvisación. <em>Más intención.</em></h2>
+        <p class="muted" style="margin-top:24px;max-width:36ch;font-size:1.08rem">Al finalizar el recorrido vas a tener herramientas para:</p>
+      </div>
+      <div class="rv">
+        <ul class="benefits">
+          <li><svg aria-hidden="true"><use href="#i-arrow"/></svg>Comprender mejor tu negocio.</li>
+          <li><svg aria-hidden="true"><use href="#i-arrow"/></svg>Identificar tu diferencial.</li>
+          <li><svg aria-hidden="true"><use href="#i-arrow"/></svg>Comunicar tu propuesta de valor.</li>
+          <li><svg aria-hidden="true"><use href="#i-arrow"/></svg>Tomar decisiones visuales coherentes.</li>
+          <li><svg aria-hidden="true"><use href="#i-arrow"/></svg>Mejorar la experiencia de tus clientes.</li>
+          <li><svg aria-hidden="true"><use href="#i-arrow"/></svg>Organizar tus próximos pasos.</li>
+        </ul>
+        <p class="benefits-note">El workbook es una guía de trabajo. Los resultados dependen de cómo apliques cada herramienta en tu negocio.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 08 · PARA QUIÉN -->
+<section class="section band-durazno" aria-labelledby="s8">
+  <div class="wrap">
+    <div class="who-head rv">
+      <div>
+        <div class="kicker"><span class="rule"></span><span class="n">PARA QUIÉN ES</span></div>
+        <h2 class="h2" id="s8">Creado para quienes quieren emprender <span class="serif" style="font-weight:400">diferente.</span></h2>
+      </div>
+      <p style="max-width:40ch;font-size:1.05rem">Para emprendedoras de productos físicos y de servicios que tienen algo bueno para ofrecer y quieren que su marca esté a la altura.</p>
+    </div>
+    <div class="who-grid" id="who-grid"></div>
+    <div class="no-prior rv">
+      <p><strong>No necesitás saber de marketing ni de diseño.</strong> Cada ejercicio tiene consignas claras y ejemplos para que avances paso a paso, con lo que ya sabés de tu negocio.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 09 · OFERTA -->
+<section class="section band-rubor" id="comprar" aria-labelledby="s9">
+  <div class="wrap">
+    <div class="offer">
+      <div class="offer-side rv">
+        <div class="kicker"><span class="rule"></span><span class="n">TU WORKBOOK</span></div>
+        <h2 class="h2" id="s9">Empezá hoy, <em>a tu ritmo.</em></h2>
+        <p class="serif">Todo lo que necesitás para mirar tu negocio con otros ojos.</p>
+        <div style="max-width:260px;margin-top:12px" data-page="cover" aria-hidden="true"></div>
+      </div>
+      <div class="card rv" id="offer-card">
+        <svg class="corner spin" aria-hidden="true" viewBox="0 0 40 40"><use href="#i-ast"/></svg>
+        <div>
+          <div class="pname" data-bind="product.name">ADN DE MARCA</div>
+          <div class="psub" data-bind="product.subtitle">Workbook digital completo</div>
+        </div>
+        <div class="price">
+          <span class="amt" data-bind="product.priceFormatted">$790</span>
+          <span class="cur" data-bind="product.currency">UYU</span>
+          <span class="once">Pago único.</span>
+        </div>
+        <div>
+          <div class="eyebrow" style="margin-bottom:14px">Incluye</div>
+          <ul class="includes" id="includes"></ul>
+        </div>
+        <a href="#comprar" class="btn" data-action="buy" data-product="adn">Comprar ADN de Marca <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <p class="fine">Lo recibís por mail en menos de 24 horas hábiles.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 10 · ASESORÍA -->
+<section class="section band-naranja" id="asesoria" aria-labelledby="s10">
+  <div class="wrap">
+    <div class="consult">
+      <div class="rv">
+        <div class="kicker"><span class="rule"></span><span class="n">OPCIÓN COMPLEMENTARIA</span></div>
+        <h2 class="h2" id="s10">¿Preferís hacerlo acompañada?</h2>
+        <p class="name">RE.pensá tu marca</p>
+        <p class="desc">Una sesión estratégica personalizada para analizar tu negocio, descubrir oportunidades y definir un camino claro.</p>
+      </div>
+      <div class="rv">
+        <dl class="facts" style="margin:0">
+          <div><dt>Duración</dt><dd data-bind="consult.duration">90 minutos</dd></div>
+          <div><dt>Incluye</dt><dd>Workbook ADN de Marca</dd></div>
+          <div><dt>Precio inicial</dt><dd><span class="big" data-bind="consult.priceFormatted">$2.490</span> <span data-bind="consult.currency">UYU</span></dd></div>
+        </dl>
+        <div class="consult-cta">
+          <a href="#asesoria" class="btn btn--ink" data-action="consult">Quiero una asesoría <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 11 · SOBRE RE. -->
+<section class="section" id="sobre" aria-labelledby="s11">
+  <div class="wrap">
+    <div class="about">
+      <div class="rv">
+        <div class="kicker"><span class="rule"></span><span class="n">EL ESTUDIO</span></div>
+        <h2 class="h2" id="s11">Somos <em>RE.</em></h2>
+      </div>
+      <div class="about-text rv">
+        <p>Creemos en las nuevas miradas, en las ideas que evolucionan y en el potencial de reinventar lo que ya existe.</p>
+        <p>Creamos herramientas para que más emprendedoras puedan construir negocios con identidad, estrategia y creatividad.</p>
+        <p class="about-quote">No queremos que todas las marcas se parezcan. Queremos que cada una encuentre su propia forma.</p>
+      </div>
+    </div>
+    <div class="triad" aria-label="Repensar. Recrear. Reinventar.">
+      <div><span>Re</span>pensar.</div>
+      <div><span>Re</span>crear.</div>
+      <div><span>Re</span>inventar.</div>
+    </div>
+  </div>
+</section>
+
+<!-- 12 · FAQ -->
+<section class="section band-rubor" id="preguntas" aria-labelledby="s12">
+  <div class="wrap">
+    <div class="faq-grid">
+      <div class="rv">
+        <div class="kicker"><span class="rule"></span><span class="n">PREGUNTAS FRECUENTES</span></div>
+        <h2 class="h2" id="s12">Lo que <em>suelen</em> preguntarnos.</h2>
+        <p class="muted" style="margin-top:24px;max-width:32ch">¿Te quedó otra duda? Escribinos a <a href="#" data-bind-href="instagram" data-bind="instagramHandle">@somos.reuy</a>.</p>
+      </div>
+      <div class="faq" id="faq"></div>
+    </div>
+  </div>
+</section>
+
+<!-- 13 · CIERRE -->
+<section class="closing band-fucsia" aria-labelledby="s13">
+  <span class="bigre" aria-hidden="true">re.</span>
+  <div class="wrap">
+    <svg class="ast-c spin" aria-hidden="true" viewBox="0 0 40 40"><use href="#i-ast"/></svg>
+    <span class="logo" style="color:var(--rubor);font-size:2.6rem" aria-hidden="true">re.</span>
+    <h2 id="s13">Todo puede tomar una nueva forma.</h2>
+    <p>Es momento de mirar tu negocio desde otra perspectiva.</p>
+    <div><a href="#comprar" class="btn btn--rubor" data-action="buy" data-product="adn">RE.descubrí tu marca <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <span class="logo">re.</span>
+        <p class="tagline">Repensar. Recrear. Reinventar.</p>
+        <p style="font-size:.85rem;margin-top:8px;color:#FFE9DEB3">RE. Estudio Creativo · Branding, estrategia y transformación de emprendimientos.</p>
+      </div>
+      <div>
+        <h4>Seguinos</h4>
+        <ul><li><a href="#" data-bind-href="instagram" data-bind="instagramHandle" target="_blank" rel="noopener">@somos.reuy</a></li></ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul id="contact-list"></ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#" data-legal="privacy">Política de privacidad</a></li>
+          <li><a href="#" data-legal="terms">Términos y condiciones</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom"><span>© <span id="year">2026</span> RE. Estudio Creativo</span><span>Hecho con intención en Uruguay</span></div>
+  </div>
+</footer>
+
+<a class="wa" id="wa-float" href="#asesoria" data-action="whatsapp" aria-label="Escribinos por WhatsApp"><svg aria-hidden="true"><use href="#i-wa"/></svg></a>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<dialog class="legal" id="legal"><div class="legal-in"><h3 id="legal-title"></h3><p id="legal-body" class="muted"></p><div><button class="btn btn--sm btn--ink" type="button" id="legal-close">Cerrar</button></div></div></dialog>
+
+<script>
+/* =====================================================================
+   CONFIGURACIÓN — editá solo este bloque para ajustar precios, enlaces
+   y textos pendientes. Todo lo que esté vacío ('') queda desactivado.
+   ===================================================================== */
+const CONFIG = {
+  brand: {
+    instagram: 'https://www.instagram.com/somos.reuy/',
+    instagramHandle: '@somos.reuy',
+    email: 'somosre.uy@gmail.com',
+  },
+
+  // WhatsApp: número en formato internacional sin "+" ni espacios (ej: '59899123456')
+  whatsapp: {
+    number: '59898309855',          // 098 309 855
+    message: 'Hola RE.! Quiero hacer una consulta sobre ADN de Marca.',
+    buyMessage: 'Hola RE.! Quiero comprar el workbook ADN de Marca ($790 UYU). Mi mail para recibirlo es: ',
+    consultMessage: 'Hola RE.! Quiero agendar una asesoría RE.pensá tu marca.',
+  },
+
+  // Productos digitales. Para sumar uno nuevo, agregá otro objeto y usá data-product="id" en un botón.
+  products: {
+    adn: {
+      name: 'ADN DE MARCA',
+      subtitle: 'Workbook digital completo',
+      price: 790,
+      currency: 'UYU',
+      checkoutUrl: 'https://pay.hotmart.com/P108607896Y?off=bb8xjex7',   // checkout de Hotmart
+      includes: [
+        'Workbook digital en PDF.',
+        'Cinco módulos.',
+        '16 ejercicios prácticos.',
+        'Ejemplos ilustrativos.',
+        'Mapa de identidad de marca.',
+        'Planificador de 30 días.',
+      ],
+    },
+  },
+
+  consult: {
+    name: 'RE.pensá tu marca',
+    duration: '90 minutos',
+    price: 2490,
+    currency: 'UYU',
+    bookingUrl: '',                  // Calendly / agenda. Si está vacío se usa WhatsApp.
+  },
+
+  // Legal: URL de cada documento cuando esté publicado.
+  legal: { privacyUrl: '', termsUrl: '' },
+
+  // Analítica: se cargan solo si tienen ID.
+  analytics: { metaPixelId: '', gaMeasurementId: '' },
+
+  // Páginas reales del workbook exportadas a WEBP (800 px, A4 vertical) en /img.
+  // Solo se muestra esta selección: el PDF completo no se publica en la web.
+  pages: [
+    { key: 'cover',    title: 'Portada',                       img: 'img/p01-portada.webp' },
+    { key: 'welcome',  title: 'Bienvenida',                    img: 'img/p02-bienvenida.webp' },
+    { key: 'index',    title: 'Índice',                        img: 'img/p03-indice.webp' },
+    { key: 'opener1',  title: 'Apertura · Módulo 01',          img: 'img/p04-modulo-01.webp' },
+    { key: 'exercise', title: 'Ejercicio · Tu historia',       img: 'img/p05-tu-historia.webp' },
+    { key: 'diag',     title: 'Auditoría de presentación',     img: 'img/p12-auditoria.webp' },
+    { key: 'opener3',  title: 'Apertura · Módulo 03',          img: 'img/p15-modulo-03.webp' },
+    { key: 'opener4',  title: 'Apertura · Módulo 04',          img: 'img/p18-modulo-04.webp' },
+    { key: 'example',  title: 'Mismo producto. Otra percepción.', img: 'img/p22-mismo-producto.webp' },
+    { key: 'plan30',   title: 'Ejercicio · Tu plan de 30 días', img: 'img/p29-plan-30-dias.webp' },
+    { key: 'map',      title: 'Mi mapa ADN',                   img: 'img/p31-mapa-adn.webp' },
+    { key: 'plan',     title: 'Planificador · Semana 1',       img: 'img/p32-planificador.webp' },
+  ],
+
+  // Fotos editoriales de "Para quién es". Dejá '' para usar el grafismo.
+  audience: [
+    { key: 'cosmetica', label: 'Cosmética natural', img: 'img/quien-cosmetica.webp' },
+    { key: 'ceramica',  label: 'Cerámica',          img: 'img/quien-ceramica.webp' },
+    { key: 'textil',    label: 'Textiles',          img: 'img/quien-textil.webp' },
+    { key: 'joyeria',   label: 'Joyería',           img: 'img/quien-joyeria.webp' },
+    { key: 'velas',     label: 'Velas y aromas',    img: 'img/quien-velas.webp' },
+    { key: 'alimentos', label: 'Alimentos artesanales', img: 'img/quien-alimentos.webp' },
+    { key: 'servicios', label: 'Profesionales de servicios', img: 'img/quien-servicios.webp' },
+    { key: 'vos',       label: 'Tu emprendimiento', img: 'img/quien-emprendimiento.webp' },
+  ],
+
+  // Preguntas frecuentes. "pending: true" muestra un aviso hasta que confirmes el dato.
+  faq: [
+    { q: '¿Necesito conocimientos de branding?',
+      a: 'No. ADN de Marca está pensado para usarse sin conocimientos previos de marketing ni de diseño. Cada ejercicio tiene consignas claras y ejemplos.' },
+    { q: '¿Sirve si vendo servicios?',
+      a: 'Sí. El workbook incluye ejemplos tanto para productos físicos como para servicios, así podés adaptar cada ejercicio a tu caso.' },
+    { q: '¿En qué formato recibo el workbook?',
+      a: 'Es un workbook digital en formato PDF.' },
+    { q: '¿Puedo imprimirlo?',
+      a: 'Al ser un PDF, podés imprimirlo y completarlo a mano si preferís trabajar en papel.' },
+    { q: '¿Cuánto tiempo necesito para completarlo?',
+      a: 'Lo hacés a tu ritmo: no hay fechas ni plazos. Podés avanzar módulo por módulo según tu disponibilidad. El último módulo te deja un plan de acción para los 30 días siguientes.' },
+    { q: '¿Incluye asesoramiento personalizado?',
+      a: 'El workbook es autoguiado. Si querés hacerlo acompañada, podés sumar la asesoría RE.pensá tu marca: una sesión estratégica de 90 minutos que incluye el workbook.' },
+    { q: '¿Cómo recibo el archivo después de comprarlo?',
+      a: 'Una vez confirmado el pago, te enviamos el workbook en PDF por mail en menos de 24 horas hábiles.' },
+  ],
+  pendingText: 'Estamos confirmando este dato. Escribinos y te respondemos.',
+};
+</script>
+
+<script>
+(function(){
+  'use strict';
+  document.documentElement.classList.add('js');
+  const $ = (s, r=document) => r.querySelector(s);
+  const $$ = (s, r=document) => Array.from(r.querySelectorAll(s));
+  const fmt = n => '$' + Number(n).toLocaleString('es-UY');
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+  /* ---------- Analítica (solo si hay IDs) ---------- */
+  const A = CONFIG.analytics;
+  if (A.metaPixelId) {
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', A.metaPixelId); fbq('track', 'PageView');
+  }
+  if (A.gaMeasurementId) {
+    const g = document.createElement('script'); g.async = true;
+    g.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(A.gaMeasurementId);
+    document.head.appendChild(g);
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function(){ dataLayer.push(arguments); };
+    gtag('js', new Date()); gtag('config', A.gaMeasurementId);
+  }
+  function track(event, data){
+    try { if (window.fbq) fbq('track', event, data); } catch(e){}
+    try { if (window.gtag) gtag('event', event === 'InitiateCheckout' ? 'begin_checkout' : event.toLowerCase(), data); } catch(e){}
+  }
+
+  /* ---------- Toast ---------- */
+  let tt;
+  function toast(msg){ const t = $('#toast'); t.textContent = msg; t.classList.add('show'); clearTimeout(tt); tt = setTimeout(()=>t.classList.remove('show'), 3800); }
+
+  /* ---------- Bindings de texto y precios ---------- */
+  const P = CONFIG.products.adn, C = CONFIG.consult;
+  const binds = {
+    'product.name': P.name, 'product.subtitle': P.subtitle, 'product.priceFormatted': fmt(P.price), 'product.currency': P.currency,
+    'consult.duration': C.duration, 'consult.priceFormatted': fmt(C.price), 'consult.currency': C.currency,
+    'instagramHandle': CONFIG.brand.instagramHandle,
+  };
+  $$('[data-bind]').forEach(el => { const v = binds[el.dataset.bind]; if (v != null) el.textContent = v; });
+  $$('[data-bind-href="instagram"]').forEach(a => { a.href = CONFIG.brand.instagram; a.target = '_blank'; a.rel = 'noopener'; });
+  $('#includes').innerHTML = P.includes.map(i => `<li><svg aria-hidden="true"><use href="#i-check"/></svg><span>${esc(i)}</span></li>`).join('');
+  $('#year').textContent = new Date().getFullYear();
+
+  /* ---------- Contacto ---------- */
+  const wa = CONFIG.whatsapp;
+  const waUrl = msg => wa.number ? `https://wa.me/${wa.number}?text=${encodeURIComponent(msg)}` : '';
+  const contact = [];
+  if (wa.number) contact.push(`<li><a href="${waUrl(wa.message)}" target="_blank" rel="noopener">WhatsApp</a></li>`);
+  if (CONFIG.brand.email) contact.push(`<li><span style="user-select:all">${esc(CONFIG.brand.email)}</span></li>`);
+  contact.push(`<li><a href="${esc(CONFIG.brand.instagram)}" target="_blank" rel="noopener">Mensaje directo en Instagram</a></li>`);
+  $('#contact-list').innerHTML = contact.join('');
+
+  /* ---------- Acciones de compra / asesoría / WhatsApp ---------- */
+  document.addEventListener('click', e => {
+    const el = e.target.closest('[data-action]'); if (!el) return;
+    const act = el.dataset.action;
+    if (act === 'buy') {
+      const prod = CONFIG.products[el.dataset.product || 'adn'];
+      if (prod && prod.checkoutUrl) {
+        // El href ya apunta al checkout (ver más abajo); solo registramos el evento.
+        track('InitiateCheckout', { value: prod.price, currency: prod.currency, content_name: prod.name });
+      } else {
+        // Sin enlace de pago: los botones llevan al bloque de compra y, desde ahí, la compra se coordina por WhatsApp.
+        const inOffer = el.closest('#offer-card');
+        if (inOffer) {
+          e.preventDefault();
+          const url = waUrl(wa.buyMessage);
+          track('InitiateCheckout', { value: prod.price, currency: prod.currency, content_name: prod.name, channel: 'whatsapp' });
+          if (url) window.open(url, '_blank', 'noopener') || (window.location.href = url);
+          else toast('Escribinos por Instagram ' + CONFIG.brand.instagramHandle + ' para comprar.');
+        }
+      }
+    }
+    if (act === 'consult') {
+      const url = C.bookingUrl || waUrl(wa.consultMessage);
+      e.preventDefault();
+      track('Contact', { content_name: C.name });
+      if (url) window.open(url, '_blank', 'noopener') || (window.location.href = url);
+      else toast('La agenda se habilita muy pronto. Escribinos por Instagram ' + CONFIG.brand.instagramHandle + '.');
+    }
+    if (act === 'whatsapp') {
+      const url = waUrl(wa.message);
+      e.preventDefault();
+      track('Contact', { channel: 'whatsapp' });
+      if (url) window.open(url, '_blank', 'noopener') || (window.location.href = url);
+      else window.open(CONFIG.brand.instagram, '_blank', 'noopener');
+    }
+  });
+  // Botones de compra: enlace directo al checkout cuando está configurado.
+  document.querySelectorAll('[data-action="buy"]').forEach(a => {
+    const prod = CONFIG.products[a.dataset.product || 'adn'];
+    if (prod && prod.checkoutUrl) { a.href = prod.checkoutUrl; a.rel = 'noopener'; }
+  });
+  if (!wa.number) $('#wa-float').setAttribute('aria-label', 'Escribinos por Instagram');
+
+  /* ---------- Legales ---------- */
+  const legalDlg = $('#legal');
+  $$('[data-legal]').forEach(a => a.addEventListener('click', e => {
+    const kind = a.dataset.legal; const url = kind === 'privacy' ? CONFIG.legal.privacyUrl : CONFIG.legal.termsUrl;
+    if (url) { a.href = url; return; }
+    e.preventDefault();
+    $('#legal-title').textContent = kind === 'privacy' ? 'Política de privacidad' : 'Términos y condiciones';
+    $('#legal-body').textContent = 'Este documento está en preparación. Si tenés alguna consulta, escribinos por WhatsApp.';
+    legalDlg.showModal();
+  }));
+  $('#legal-close').addEventListener('click', () => legalDlg.close());
+
+  /* ---------- Páginas del workbook (maquetas reemplazables por imágenes) ---------- */
+  const T = {
+    cover: () => `<div class="pg cover"><div class="pg-top"><span class="lg">re.</span><span>Workbook</span></div><div class="ring"></div><svg class="a" viewBox="0 0 40 40"><use href="#i-ast"/></svg><h4>ADN<br>de Marca</h4><div class="sub">Workbook digital para emprendedoras</div><div class="sf">Repensar. Recrear. Reinventar.</div></div>`,
+    index: () => `<div class="pg index"><div class="pg-top"><span>Contenido</span><span class="lg">re.</span></div><ol>${['Tu esencia','El verdadero valor de lo que vendés','Tu diferencial','El universo de tu marca','De la idea a la acción'].map((m,i)=>`<li><b>0${i+1}</b>${m}</li>`).join('')}</ol><div class="pg-foot"><span>ADN de Marca</span><span>02</span></div></div>`,
+    opener1: () => `<div class="pg opener" style="background:var(--naranja)"><div class="pg-top"><span>Módulo</span><span class="lg">re.</span></div><div class="big">01</div><h4>Tu esencia</h4><div class="sf">Tu historia, tus valores y el propósito detrás de tu negocio.</div></div>`,
+    exercise: () => `<div class="pg"><div class="pg-top"><span style="color:var(--fucsia)">Ejercicio · Módulo 01</span><span class="lg">re.</span></div><h4 style="font-size:8cqw;margin-top:6cqw">Tu historia</h4><div class="q">¿Por qué empezaste este emprendimiento?<small>Pensá en el momento en que decidiste hacerlo.</small></div><div class="lines"><i></i><i></i><i></i></div><div class="q">¿Qué querés que sientan tus clientes?</div><div class="lines"><i></i><i></i><i></i></div><div class="pg-foot"><span>ADN de Marca</span><span>✱</span></div></div>`,
+    example: () => `<div class="pg example" style="background:var(--rubor)"><div class="pg-top"><span>Ejemplos</span><span class="lg">re.</span></div><h4 style="font-size:8cqw;margin-top:6cqw">Así se ve en la práctica</h4><div class="box"><b>PRODUCTO</b>Una marca de velas que pasa de “vela aromática” a una experiencia para el descanso.</div><div class="box"><b>SERVICIO</b>Una nutricionista que define a quién acompaña y cómo lo cuenta.</div><div class="pg-foot"><span>Ejemplos ilustrativos</span><span>✱</span></div></div>`,
+    diag: () => `<div class="pg diag"><div class="pg-top"><span style="color:var(--fucsia)">Diagnóstico</span><span class="lg">re.</span></div><h4 style="font-size:8cqw;margin:6cqw 0 3cqw">¿Dónde está hoy tu marca?</h4>${['Mi imagen refleja la calidad','Sé qué me diferencia','Comunico mi propuesta con claridad','Mis fotos tienen un estilo propio','La experiencia de compra es coherente','Tengo claro mi próximo paso'].map((r,i)=>`<div class="row"><span>${r}</span><span class="dots">${[1,2,3,4,5].map(n=>`<i class="${n<=((i*3)%5)+1?'f':''}"></i>`).join('')}</span></div>`).join('')}<div class="pg-foot"><span>Puntuá del 1 al 5</span><span>✱</span></div></div>`,
+    map: () => { const nodes=[['Esencia',50,6],['Valores',90,28],['Cliente',90,72],['Diferencial',50,94],['Personalidad',12,72],['Universo visual',14,28]]; return `<div class="pg map"><div class="pg-top"><span style="color:var(--fucsia)">Mapa ADN de Marca</span><span class="lg">re.</span></div><div class="orbit"><div class="ringo"></div><div class="core">ADN</div>${nodes.map(([t,x,y])=>`<span class="node" style="left:${x}%;top:${y}%">${t}</span>`).join('')}</div><div class="pg-foot"><span>Tu marca en una página</span><span>✱</span></div></div>`; },
+    plan: () => `<div class="pg plan"><div class="pg-top"><span style="color:var(--fucsia)">Módulo 05</span><span class="lg">re.</span></div><h4 style="font-size:8cqw;margin-top:6cqw">Plan de 30 días</h4><div class="wk">${['Semana 1','Semana 2','Semana 3','Semana 4'].map(w=>`<div><b>${w.toUpperCase()}</b>Objetivo</div>`).join('')}</div><div class="grid">${Array.from({length:30},(_,i)=>`<i>${i+1}</i>`).join('')}</div><div class="pg-foot"><span>De la idea a la acción</span><span>✱</span></div></div>`,
+  };
+  const pageByKey = k => CONFIG.pages.find(p => p.key === k) || { key:k, title:'', img:'' };
+  function pageHTML(key){
+    const p = pageByKey(key);
+    const inner = p.img ? `<img class="pg-img" src="${esc(p.img)}" alt="${esc(p.title)}" loading="${key==='cover'||key==='example'?'eager':'lazy'}" decoding="async" draggable="false">` : (T[key] ? T[key]() : '');
+    return `<div class="page">${inner}</div>`;
+  }
+  $$('[data-page]').forEach(el => { el.innerHTML = pageHTML(el.dataset.page); });
+
+  /* ---------- Galería + lightbox ---------- */
+  const gal = $('#gallery');
+  gal.innerHTML = CONFIG.pages.map((p,i) => `<button class="g-item" type="button" data-i="${i}" aria-label="Ampliar: ${esc(p.title)}">${pageHTML(p.key)}<span class="gcap"><b>${esc(p.title)}</b><span class="muted">${String(i+1).padStart(2,'0')}/${String(CONFIG.pages.length).padStart(2,'0')}</span></span></button>`).join('');
+  const step = () => (gal.querySelector('.g-item')?.offsetWidth || 280) + 20;
+  $('#g-prev').addEventListener('click', () => gal.scrollBy({ left: -step(), behavior: 'smooth' }));
+  $('#g-next').addEventListener('click', () => gal.scrollBy({ left: step(), behavior: 'smooth' }));
+
+  const lb = $('#lightbox'); let cur = 0;
+  function show(i){
+    cur = (i + CONFIG.pages.length) % CONFIG.pages.length;
+    const p = CONFIG.pages[cur];
+    $('#lb-page').innerHTML = pageHTML(p.key);
+    $('#lb-cap').textContent = `${p.title} · ${cur+1}/${CONFIG.pages.length}`;
+  }
+  gal.addEventListener('click', e => { const b = e.target.closest('.g-item'); if (!b) return; show(+b.dataset.i); lb.showModal(); });
+  $('#lb-close').addEventListener('click', () => lb.close());
+  $('#lb-prev').addEventListener('click', () => show(cur-1));
+  $('#lb-next').addEventListener('click', () => show(cur+1));
+  lb.addEventListener('click', e => { if (e.target === lb || e.target.classList.contains('lb-stage')) lb.close(); });
+  lb.addEventListener('keydown', e => { if (e.key === 'ArrowLeft') show(cur-1); if (e.key === 'ArrowRight') show(cur+1); });
+  lb.addEventListener('contextmenu', e => e.preventDefault());
+  let sx = null;
+  lb.addEventListener('touchstart', e => { sx = e.touches[0].clientX; }, { passive:true });
+  lb.addEventListener('touchend', e => { if (sx == null) return; const dx = e.changedTouches[0].clientX - sx; if (Math.abs(dx) > 50) show(cur + (dx < 0 ? 1 : -1)); sx = null; });
+
+  /* ---------- Para quién es ---------- */
+  const ICONS = {
+    cosmetica:'<rect x="40" y="48" width="40" height="56" rx="6"/><path d="M50 48V36h20v12M54 36V22a6 6 0 0 1 12 0v14"/><path d="M48 70h24"/>',
+    ceramica:'<path d="M44 20h32l-3 14c13 7 17 21 14 38-3 17-14 28-27 28S36 89 33 72c-3-17 1-31 14-38z"/><path d="M38 58h44"/>',
+    textil:'<rect x="20" y="70" width="80" height="16" rx="3"/><rect x="26" y="52" width="68" height="16" rx="3"/><rect x="32" y="34" width="56" height="16" rx="3"/><path d="M38 42h44M32 60h56M26 78h68" stroke-dasharray="3 4"/>',
+    joyeria:'<circle cx="60" cy="72" r="26"/><circle cx="60" cy="72" r="19"/><path d="M50 46l10-18 10 18-10 6z"/>',
+    velas:'<rect x="42" y="50" width="36" height="54" rx="2"/><path d="M60 50V40"/><path d="M60 38c-7-6-6-14 0-22 6 8 7 16 0 22z"/><path d="M42 62h36"/>',
+    alimentos:'<rect x="36" y="40" width="48" height="62" rx="8"/><rect x="34" y="28" width="52" height="12" rx="3"/><path d="M44 62h32M44 72h22"/>',
+    servicios:'<rect x="28" y="32" width="64" height="44" rx="3"/><path d="M18 86h84l-6 8H24z"/><path d="M42 54h20M42 62h34" />',
+    vos:'<path d="M60 22v76M27 41l66 38M27 79l66-38" stroke-width="3"/>',
+  };
+  const tones = ['t-rubor','t-blanco','t-fucsia','t-tinta','t-naranja','t-rubor','t-blanco','t-fucsia'];
+  $('#who-grid').innerHTML = CONFIG.audience.map((a,i) => {
+    const photo = a.img ? `<img src="${esc(a.img)}" alt="${esc(a.label)}" loading="lazy" decoding="async">` : '';
+    return `<div class="tile ${tones[i%tones.length]} ${a.img?'has-photo':''} rv">${photo}<div class="ill"><svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ICONS[a.key]||ICONS.vos}</svg></div><div class="tl"><span>${esc(a.label)}</span><small>${String(i+1).padStart(2,'0')}</small></div></div>`;
+  }).join('');
+
+  /* ---------- FAQ ---------- */
+  $('#faq').innerHTML = CONFIG.faq.map((f,i) => `<details${i===0?' open':''}><summary>${esc(f.q)}<span class="pm" aria-hidden="true"><svg><use href="#i-plus"/></svg></span></summary><div class="ans">${f.a ? esc(f.a) : ''}${f.pending ? `<span class="pending">✱ ${esc(CONFIG.pendingText)}</span>` : ''}</div></details>`).join('');
+
+  /* ---------- Antes / después ---------- */
+  const cmp = $('#compare'), rng = $('#compare-range');
+  rng.addEventListener('input', () => cmp.style.setProperty('--pos', rng.value + '%'));
+
+  /* ---------- Header + reveal sutil ---------- */
+  const hdr = $('.site-header');
+  const onScroll = () => hdr.classList.toggle('scrolled', window.scrollY > 8);
+  window.addEventListener('scroll', onScroll, { passive:true }); onScroll();
+  if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const io = new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting) { en.target.classList.remove('pending'); io.unobserve(en.target); } }), { rootMargin: '0px 0px -8% 0px' });
+    $$('.rv').forEach(el => { const r = el.getBoundingClientRect(); if (r.top > window.innerHeight) { el.classList.add('pending'); io.observe(el); } });
+  }
+})();
+</script>
+</body>
+</html>
