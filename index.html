@@ -187,7 +187,7 @@ p{margin:0}
 .ex .lbl{font-size:.62rem;font-weight:600;letter-spacing:.16em}
 .ex .bf{background:#EDEAE6;font-family:Arial,Helvetica,sans-serif;color:#3a3a3a}
 .ex .af{background:var(--rubor)}
-.ex .mini{aspect-ratio:1;display:grid;place-items:center;border-radius:0}
+.ex .mini{aspect-ratio:1;width:100%;height:auto;object-fit:cover;display:block}
 .disclaimer{margin-top:28px;display:flex;gap:10px;align-items:flex-start;font-size:.82rem;color:var(--tinta-suave);max-width:70ch}
 .disclaimer .ast{flex:0 0 14px;height:14px;margin-top:.3em}
 
@@ -558,37 +558,29 @@ dialog.legal::backdrop{background:#1A1414B3}
     </div>
 
     <div class="examples">
-      <article class="ex rv" aria-label="Ejemplo de producto: cerámica artesanal">
-        <div class="cap"><b>Producto · Cerámica</b><span class="muted">Etiqueta y nombre</span></div>
+      <article class="ex rv" aria-label="Ejemplo de producto: taza de cerámica artesanal">
+        <div class="cap"><b>Producto · Cerámica</b><span class="muted">Fotografía y styling</span></div>
         <div class="side bf">
           <span class="lbl">ANTES</span>
-          <div class="mini" style="background:#DDD8D1">
-            <svg viewBox="0 0 120 120" width="70%" aria-hidden="true"><path d="M40 30h40l-4 16c14 8 18 22 14 40-3 14-14 20-30 20s-27-6-30-20c-4-18 0-32 14-40z" fill="#C9B9A6" stroke="#8D7F70" stroke-width="2"/><rect x="44" y="64" width="32" height="16" fill="#fff" stroke="#999"/></svg>
-          </div>
-          <span style="font-size:.85rem">"Tazas y cosas de cerámica, pedidos por privado"</span>
+          <img class="mini" src="img/ej-ceramica-antes.webp" alt="Antes: taza lisa fotografiada sobre fondo gris, sin contexto" width="700" height="700" loading="lazy" decoding="async">
+          <span style="font-size:.85rem">Foto de catálogo, fondo gris y sin contexto.</span>
         </div>
         <div class="side af">
           <span class="lbl" style="color:var(--fucsia)">DESPUÉS</span>
-          <div class="mini" style="background:var(--naranja)">
-            <svg viewBox="0 0 120 120" width="70%" aria-hidden="true"><path d="M40 30h40l-4 16c14 8 18 22 14 40-3 14-14 20-30 20s-27-6-30-20c-4-18 0-32 14-40z" fill="#FFE9DE" stroke="#1A1414" stroke-width="1.5"/><text x="60" y="78" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-weight="800" font-size="13" fill="#1A1414" letter-spacing="-.5">barro.</text></svg>
-          </div>
-          <span style="font-size:.85rem;font-weight:500">barro. <span class="serif" style="color:var(--fucsia)">piezas para la mesa lenta</span></span>
+          <img class="mini" src="img/ej-ceramica-despues.webp" alt="Después: taza artesanal con té, en una escena cálida con luz natural" width="700" height="700" loading="lazy" decoding="async">
+          <span style="font-size:.85rem;font-weight:500">Escena cálida que cuenta cómo se usa y qué se siente.</span>
         </div>
       </article>
-      <article class="ex rv" aria-label="Ejemplo de servicio: profesional del bienestar">
-        <div class="cap"><b>Servicio · Bienestar</b><span class="muted">Propuesta de valor</span></div>
+      <article class="ex rv" aria-label="Ejemplo de servicio: profesional de la nutrición">
+        <div class="cap"><b>Servicio · Nutrición</b><span class="muted">Propuesta de valor</span></div>
         <div class="side bf">
           <span class="lbl">ANTES</span>
-          <div class="mini" style="background:#DDD8D1;padding:12%;place-items:stretch">
-            <div style="display:grid;gap:6px;align-content:center;font-size:.78rem;color:#444"><b style="font-size:.92rem">Lic. en Nutrición</b><span>Consultas · Planes · Turnos</span><span>Escribime por DM</span></div>
-          </div>
+          <img class="mini" src="img/ej-servicio-antes.webp" alt="Antes: cartel genérico de licenciada en nutrición con lista de servicios" width="700" height="700" loading="lazy" decoding="async">
           <span style="font-size:.85rem">Bio genérica, sin enfoque ni público claro.</span>
         </div>
         <div class="side af">
           <span class="lbl" style="color:var(--fucsia)">DESPUÉS</span>
-          <div class="mini" style="background:var(--fucsia);color:var(--rubor);padding:12%;place-items:stretch">
-            <div style="display:grid;gap:6px;align-content:center"><b style="font-weight:800;font-size:1.15rem;letter-spacing:-.03em;line-height:1.05">comer en calma.</b><span class="serif" style="font-size:.95rem;line-height:1.2">Nutrición para mujeres que trabajan todo el día.</span></div>
-          </div>
+          <img class="mini" src="img/ej-servicio-despues.webp" alt="Después: pieza de marca comer en calma, nutrición para mujeres que trabajan todo el día" width="700" height="700" loading="lazy" decoding="async">
           <span style="font-size:.85rem;font-weight:500">Nombre, foco y una promesa clara.</span>
         </div>
       </article>
